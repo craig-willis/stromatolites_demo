@@ -23,6 +23,7 @@ eval $(parse_yaml config)
 
 pwd=$(pwd)
 
+export PGPASSWORD=$POSTGRES_PASSWORD
 # Create the database - if it exists an error will be thrown which can be ignored
 createdb $postgres__database -h $postgres__host -U $postgres__user -p $postgres__port
 
