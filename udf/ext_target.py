@@ -20,6 +20,7 @@ with open('./config', 'r') as config_yaml:
 connection = psycopg2.connect(
     dbname=credentials['postgres']['database'],
     user=credentials['postgres']['user'],
+    password=credentials['postgres']['password'],
     host=credentials['postgres']['host'],
     port=credentials['postgres']['port'])
 cursor = connection.cursor()

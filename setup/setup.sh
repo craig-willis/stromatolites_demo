@@ -1,3 +1,5 @@
+#!/bin/bash 
+
 # via http://stackoverflow.com/a/21189044/1956065
 function parse_yaml {
    local prefix=$2
