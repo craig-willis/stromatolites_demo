@@ -1,6 +1,5 @@
 FROM ndslabs/cloud9-python
 
-
 RUN apt-get -qq update -y && \
     apt-get -qq install -y \
         postgresql-client \
@@ -15,4 +14,5 @@ RUN apt-get -qq update -y && \
     cd stromatolites_demo/ && make
 
 COPY ./entrypoint.sh /
+
 CMD [ "/entrypoint.sh" ]
