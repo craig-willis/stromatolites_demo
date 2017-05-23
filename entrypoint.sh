@@ -10,6 +10,6 @@ sed -i s/POSTGRES_HOST/$POSTGRES_PORT_5432_TCP_ADDR/g credentials
 sed -i s/POSTGRES_DB/$POSTGRES_DB/g credentials
 sed -i s/POSTGRES_PASSWORD/$POSTGRES_PASSWORD/g credentials
 
-make local_setup
+#make local_setup
 
 nodejs /cloud9/server.js -p 80 -w /workspace
