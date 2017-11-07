@@ -10,7 +10,7 @@ RUN apt-get -qq update -y && \
     apt-get -qq autoclean && \
     apt-get -qq clean all && \
     rm -rf /var/cache/apk/* && \
-    cd / && git clone https://github.com/craig-willis/stromatolites_demo && \
+    cd / && git clone https://github.com/nds-org/stromatolites_demo && \
     cd stromatolites_demo/ && make
 
 COPY ./entrypoint.sh /
